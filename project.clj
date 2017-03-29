@@ -16,6 +16,25 @@
              ;; Note that Midje itself is in the `dev` profile to support
              ;; running autotest in the repl.
              :midje {}}
+
+  :cljsbuild
+  {:builds
+   [{:id           "unit-tests"
+     :source-paths ["src/cljs" "test/cljs"]
+     :compiler     {:main            'tamagotchi.unit-tests
+                    :output-to       "resources/public/js/compiled/unit-tests.js"
+                    :target          :nodejs
+                    :optimizations   :none
+                    }}
+
+    {:id           "min"
+     :source-paths ["src/cljs"]
+     :compiler     {:main            tamagotchi.core
+                    :output-to       "resources/public/js/compiled/app.js"
+                    :optimizations   :advanced
+                    :closure-defines {goog.DEBUG false}
+                    :pretty-print    false}}
+    ]}
   )
 
   
