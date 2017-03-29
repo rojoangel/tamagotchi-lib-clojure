@@ -8,7 +8,9 @@
   :source-paths ["src/cljc"]
   :test-paths ["test/cljc"]
   :profiles {:dev {:dependencies [[midje "1.8.3"]]
-                   :plugins [[lein-midje "3.2.1"]]}
+                   :plugins [[lein-midje "3.2.1"]
+                             [lein-doo "0.1.6"]
+                             [lein-auto "0.1.2"]]}
              ;; You can add dependencies that apply to `lein midje` below.
              ;; An example would be changing the logging destination for test runs.
              :midje {}})
