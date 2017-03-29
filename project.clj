@@ -7,13 +7,8 @@
 
   :source-paths ["src/cljc"]
   :test-paths ["test/cljc"]
-  :profiles {:dev   {:plugins [[lein-doo "0.1.6"]
-                               [lein-auto "0.1.3"]]}
-             ;; You can add dependencies that apply to `lein midje` below.
-             ;; An example would be changing the logging destination for test runs.
-             ;; Note that Midje itself is in the `dev` profile to support
-             ;; running autotest in the repl.
-             :midje {}}
+  :profiles {:dev {:plugins [[lein-doo "0.1.6"]
+                             [lein-auto "0.1.3"]]}}
 
   :cljsbuild
   {:builds
