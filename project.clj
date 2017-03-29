@@ -1,6 +1,7 @@
 (defproject tamagotchi "0.0.1-SNAPSHOT"
   :description "tamagotchi library"
-  :dependencies [[org.clojure/clojure "1.8.0"]]
+  :dependencies [[org.clojure/clojure "1.8.0"]
+                 [org.clojure/clojurescript "1.9.227"]]
   :source-paths ["src/cljc"]
   :test-paths ["test/cljc"]
   :profiles {:dev {:dependencies [[midje "1.8.3"]]
