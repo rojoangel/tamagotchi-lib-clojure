@@ -33,6 +33,8 @@
                     :closure-defines {goog.DEBUG false}
                     :pretty-print    false}}
     ]}
+
+  :doo {:build "unit-tests"}
   )
 
   
