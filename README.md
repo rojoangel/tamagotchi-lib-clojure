@@ -1,13 +1,12 @@
-# tamagotchi
+# tamagotchi clojure(script) library
 
-The project uses [Midje](https://github.com/marick/Midje/).
 
 ## How to run the tests
 
-`lein midje` will run all tests.
+`lein test` runs all clojure tests.
 
-`lein midje namespace.*` will run only tests beginning with "namespace.".
+`lein doo node once` runs all clojurescript tests..
 
-`lein midje :autotest` will run all the tests indefinitely. It sets up a
-watcher on the code files. If they change, only the relevant tests will be
-run again.
+`lein auto test` will run all the clojure tests indefinitely.
+
+`lein doo node` will run all the clojurescripts tests indefinitely.
