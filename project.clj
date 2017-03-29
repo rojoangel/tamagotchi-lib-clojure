@@ -20,15 +20,15 @@
   :cljsbuild
   {:builds
    [{:id           "unit-tests"
-     :source-paths ["src/cljs" "test/cljs"]
-     :compiler     {:main            'tamagotchi.unit-tests
-                    :output-to       "resources/public/js/compiled/unit-tests.js"
-                    :target          :nodejs
-                    :optimizations   :none
+     :source-paths ["src/cljc" "test/cljc" "test/cljs"]
+     :compiler     {:main          'tamagotchi.unit-tests
+                    :output-to     "resources/public/js/compiled/unit-tests.js"
+                    :target        :nodejs
+                    :optimizations :none
                     }}
 
     {:id           "min"
-     :source-paths ["src/cljs"]
+     :source-paths ["src/cljc"]
      :compiler     {:main            tamagotchi.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
