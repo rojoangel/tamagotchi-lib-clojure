@@ -4,3 +4,6 @@ target
 *.iml
 .idea
 .lein-repl-history
+.lein-failures
+resources/public/js
+out
