@@ -1,7 +1,9 @@
 (ns tamagotchi.core-test
   (:require
-    [clojure.test :refer :all]
-    [tamagotchi.core :as tamagotchi]))
+    #?@(:clj  [[clojure.test :refer :all]
+               [tamagotchi.core :as tamagotchi]]
+        :cljs [[cljs.test :refer-macros [deftest is testing]]
+               [tamagotchi.core :as tamagotchi]])))
 
 (deftest
   about-tamagotchi
