@@ -2,6 +2,9 @@
   :description "tamagotchi library"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.227"]]
+
+  :plugins [[lein-cljsbuild "1.1.5"]]
+
   :source-paths ["src/cljc"]
   :test-paths ["test/cljc"]
   :profiles {:dev {:dependencies [[midje "1.8.3"]]
