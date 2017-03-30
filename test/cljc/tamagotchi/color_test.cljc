@@ -41,4 +41,8 @@
         (is (= :green (color/value->color {:type :increasing :val 75}))))
       (testing
         "Otherwise its color is green"
-        (is (= :green (color/value->color {:type :increasing :val 1})))))))
+        (is (= :green (color/value->color {:type :increasing :val 1})))))
+    (testing
+      "A keyword to color conversion function gets applied when passed in"
+      (is (= "green" (color/value->color {:type :increasing :val 1} name)))
+      (is (= "green" (color/value->color {:type :increasing :val 1} #(get {:green "green"} %)))))))
