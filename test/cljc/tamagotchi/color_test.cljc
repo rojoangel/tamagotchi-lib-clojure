@@ -24,4 +24,21 @@
         (is (= :green (color/value->color {:type :decreasing :val 25} identity))))
       (testing
         "Otherwise its color is green"
-        (is (= :green (color/value->color {:type :decreasing :val 99} identity)))))))
+        (is (= :green (color/value->color {:type :decreasing :val 99} identity)))))
+    (testing
+      "increasing values"
+      (testing
+        "When value is in upper 90% its color is red"
+        (is (= :red (color/value->color {:type :increasing :val 99} identity))))
+      (testing
+        "When value is exactly 90% its color is yellow"
+        (is (= :yellow (color/value->color {:type :increasing :val 90} identity))))
+      (testing
+        "When value is in upper 75% its color is yellow"
+        (is (= :yellow (color/value->color {:type :increasing :val 78} identity))))
+      (testing
+        "When value is exactly 75% its color is green"
+        (is (= :green (color/value->color {:type :increasing :val 75} identity))))
+      (testing
+        "Otherwise its color is green"
+        (is (= :green (color/value->color {:type :increasing :val 1} identity)))))))
