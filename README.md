@@ -1,5 +1,6 @@
 # tamagotchi clojure(script) library
 
+[![Clojars Project](https://img.shields.io/clojars/v/clomanji/sm2.svg)](https://clojars.org/clomanji/sm2)
 
 ## How to run the tests
 
