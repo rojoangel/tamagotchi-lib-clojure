@@ -1,4 +1,4 @@
-(defproject tamagotchi "0.0.1-SNAPSHOT"
+(defproject tamagotchi "0.0.1"
   :description "clojure(script) tamagotchi library"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.227"]]
