@@ -1,5 +1,5 @@
 language: clojure
-lein: lein2
+lein: 2.7.1
 script:
-  - lein2 test # clojure
-  - lein2 doo node unit-tests once # clojurescript
+  - lein test # clojure
+  - lein doo node unit-tests once # clojurescript
